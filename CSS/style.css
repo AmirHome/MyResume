@@ -18,5 +18,23 @@
 hr {
     height: 8px !important;
     color: rgb(87 186 134);
-    margin: 10px;
+    margin: 0px;
 }
+.box{
+    background-color: rgb(87 186 134);
+}
+.title{
+    color: rgb(87 186 134);
+}
+
+.row-title {
+    padding-top:20px
+}
+.bg-badge-dark{
+    background-color:#93c47d;
+}
+.bg-badge{
+    background-color: #b6d7a8;
+}
+
+
