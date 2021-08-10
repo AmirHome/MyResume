@@ -1,0 +1,22 @@
+.title-fullname{
+    font-size: 35px;
+    padding-top: 10px;   
+}
+.title-job{
+    color: rgb(87 186 134);
+    font-size: 20px;
+}
+
+.bg-img {
+    background-color: rgb(87 186 134);
+    height: 110px;
+    width: 134px;
+    margin-right: 15px;
+    padding: 0;
+}
+
+hr {
+    height: 8px !important;
+    color: rgb(87 186 134);
+    margin: 10px;
+}
