@@ -1,11 +1,20 @@
-.title-fullname{
-    font-size: 35px;
-    padding-top: 10px;   
+body{
+    background-color: aliceblue;
+    padding-bottom: 15px;
 }
-.title-job{
-    color: rgb(87 186 134);
-    font-size: 20px;
+.container{
+    background-color:white;
+    padding-bottom: 30px;
+
 }
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+a visited {
+    color: currentColor;
+}
+
 
 .bg-img {
     background-color: rgb(87 186 134);
@@ -13,28 +22,70 @@
     width: 134px;
     margin-right: 15px;
     padding: 0;
+
+}
+
+.title-fullname {
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+.title-job {
+    color: rgb(87 186 134);
+    font-size: 20px;
+    
+}
+
+.text-contact{
+    color: slategrey;
+    padding: 10px 0px 10px 30px;
+}
+
+.text-contact i {
+    font-size: 20px;
 }
 
 hr {
-    height: 8px !important;
+    height: 5px !important;
     color: rgb(87 186 134);
     margin: 0px;
 }
 .box{
     background-color: rgb(87 186 134);
+    height: 53px;
+    width: 35px;
+    margin-right: 5px;
 }
 .title{
     color: rgb(87 186 134);
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+.sub-title{
+    color: grey;
+    font-style: italic;
 }
 
-.row-title {
-    padding-top:20px
-}
 .bg-badge-dark{
     background-color:#93c47d;
 }
 .bg-badge{
     background-color: #b6d7a8;
+}
+
+.badge {
+    color: white;
+}
+
+.row-title {
+    padding-top:20px
+}
+
+.heading3{
+    color: grey;
+    font-size: 14px;
+
 }
 
 
