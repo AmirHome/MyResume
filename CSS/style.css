@@ -90,16 +90,18 @@ hr {
 
 .cropped {
     width: 100px; /* width of container */
+    height: 110px;
     overflow: hidden;
     margin-left: auto;
     margin-right: 0;
+    
 }
 
-/* .cropped img {
+.cropped img {
     margin: 0px 0px 0px -5px;
     object-position: center top;
-    object-position: -17px 0px;
-} */
+    object-position: -7px 0px;
+}
 
 
 
