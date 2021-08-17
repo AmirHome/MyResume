@@ -81,6 +81,11 @@ a visited {
     font-style: italic;
 }
 
+.sub2-title{
+    color: grey;
+    font-style:normal;
+}
+
 .bg-badge-dark{
     background-color: #FF8C51;
     font-size: 14px;
