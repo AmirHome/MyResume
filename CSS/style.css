@@ -21,10 +21,10 @@ a visited {
 }
 
 .bg-header{
-    background-color:grey;
+    background-color:rgb(81 81 81);
 }
 .bg-contact{
-    background-color: black
+    background-color: rgb(42 42 42)
 }
 
 .bg-img {
@@ -40,10 +40,10 @@ a visited {
 .title-fullname {
     font-size: 35px;
     padding-top: 10px;
+    color: white;
 }
 
 .title-job {
-    color: rgb(87 186 134);
     color: #f56d27;
     font-size: 22px;
     
@@ -58,22 +58,18 @@ a visited {
     font-size: 20px;
 }
 
-hr {
-    height: 5px !important;
-    color: rgb(87 186 134);
-    color: #f56d27;
-
-    margin: 0px;
+.line {
+    background-color: #f56d27;
+    height: 7px;
 }
+
 .box{
-    background-color: rgb(87 186 134);
     background-color: #f56d27;
     height: 53px;
     width: 35px;
     margin-right: 5px;
 }
 .title{
-    color: rgb(87 186 134);
     color: #f56d27;
 
     font-weight: bold;
@@ -86,20 +82,20 @@ hr {
 }
 
 .bg-badge-dark{
-    background-color:#93c47d;
-    background-color: #CE4B09;
     background-color: #FF8C51;
+    font-size: 14px;
 }
+    
 .bg-badge{
-    background-color: #b6d7a8;
-    background-color: #FF8C51;
     background-color: #FFA77A;
+    font-size: 12px;
     
 }
 
 .badge {
-    color: white;
+    color: rgb(81 81 81);
 }
+
 
 .row-title {
     padding-top:20px
