@@ -127,4 +127,36 @@ a visited {
 }
 
 
+/* Float Buttom */
 
+.pdf-float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:105px;
+	right:40px;
+	background-color: rgb(245 116 46);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+}
+.pdf-float i{
+	margin-top:  22px;
+}
+
+.img-float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+}
+
+.img-float img{
+    border-radius:50px;
+	box-shadow: 2px 2px 3px #999;
+
+}

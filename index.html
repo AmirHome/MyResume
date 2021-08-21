@@ -10,10 +10,8 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="./CSS/style.css">
-	<link href="https://docs.devexpress.com/AspNetBootstrap/DevExpress.Web.Bootstrap.BootstrapFloatingActionButton">
-    <link href="https://docs.devexpress.com/AspNetBootstrap/DevExpress.Web.Bootstrap.BootstrapFABActionItem">
-    
+	<link rel="stylesheet" href="./css/style.css">
+
 	
     <title> Amir's Resume </title>
 
@@ -203,25 +201,29 @@
             </div>
         </div>                    
                             
-
+        <a href="...pdf" class="pdf-float float">
+            <i class="fa fa-plus"></i>
+            </a>
+        <a href="#" class="img-float float">
+            <img alt="Amir Hosseinzadeh Website" src="img/amirhome-icon.png" title="Amir Hosseinzadeh Website Logo">
+        </a>
+    
     </div>
 
 
-    <div class="row">
-    <dx:BootstrapFloatingActionButton ID="FABActionGroup" runat="server" ContainerCssSelector="#action-group">
-    <Items>
-        <dx:BootstrapFABActionGroup ContextName="c1" ExpandIconCssClass="far fa-comments">
-            <Items>
-                <dx:BootstrapFABActionItem ActionName="comment" Text="Comment" IconCssClass="far fa-comment"></dx:BootstrapFABActionItem>
-                <dx:BootstrapFABActionItem ActionName="like" Text="Like" IconCssClass="far fa-thumbs-up"></dx:BootstrapFABActionItem>
-            </Items>
-        </dx:BootstrapFABActionGroup>
-    </Items>
-    </dx:BootstrapFloatingActionButton>
-    </div>
 
 
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+        <script>
+
+            
+        $(document).ready(function(){
+
+
+        });
+
+        </script>
     </body>
 </html>
