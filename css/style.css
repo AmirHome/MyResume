@@ -1,5 +1,5 @@
 body{
-    background-color: aliceblue;
+    
     background-color: #515b5f;
     background-color: #424242;
     padding-bottom: 15px;
@@ -11,6 +11,9 @@ body{
     background-color:white;
     padding-bottom: 30px;
 
+}
+.footer{
+    background-color:#424242;
 }
 a {
     color: currentColor;
