@@ -134,17 +134,17 @@ a visited {
 
 .pdf-float{
 	position:fixed;
-	width:60px;
-	height:60px;
+	width:70px;
+	height:70px;
 	bottom:105px;
-	right:40px;
+	right:20px;
 	background-color: rgb(245 116 46);
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
 }
 .pdf-float i{
-	margin-top:  22px;
+	margin-top:  28px;
 }
 
 .img-float{
@@ -152,7 +152,7 @@ a visited {
 	width:60px;
 	height:60px;
 	bottom:40px;
-	right:40px;
+	right:30px;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
