@@ -15,6 +15,7 @@ body{
 .footer{
     background-color:#424242;
 }
+
 a {
     color: currentColor;
     text-decoration: none;
@@ -133,36 +134,69 @@ a visited {
 
 /* Float Buttom */
 
+#btn-print {
+	animation-name: anim-btn;
+	animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+#btn-logo {
+    opacity: 0;
+	animation-name: anim-fadex;
+	animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+}
+
+@keyframes anim-btn {
+	0% {
+		transform: translateY(2%);
+        /* transform: translateX(1%); */
+	}
+
+	50% {
+		transform: translateY(-2%);
+	}
+
+	100% {
+		transform: translateY(2%);
+		/* transform: translateX(1%); */
+	}
+}
+@keyframes anim-fade {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
 .pdf-float{
 	position:fixed;
-	width:70px;
-	height:70px;
-	bottom:105px;
-	right:20px;
+	width:80px;
+	height:80px;
+	bottom:40px;
+	right:30px;
 	background-color: rgb(245 116 46);
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
 }
+
 .pdf-float i{
-	margin-top:  28px;
+    position: absolute;
+    top: 16px;
+    left: 22px;
+    font-size: 48px;
 }
-
-.img-float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:30px;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-}
-
-.img-float img{
+.pdf-float img{
     border-radius:50px;
-	box-shadow: 2px 2px 3px #999;
-
 }
 
 @media only screen and (max-width: 541px) {
