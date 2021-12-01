@@ -20,8 +20,9 @@ a {
     color: currentColor;
     text-decoration: none;
 }
-a visited {
-    color: currentColor;
+
+a:hover {
+    color: wheat;
 }
 
 .bg-header{
@@ -34,21 +35,21 @@ a visited {
 .bg-img {
     background-color: rgb(245 116 46);
     height: 110px;
-    width: 134px;
-    margin-right: 15px;
+    /* width: 134px; */
+    /* margin-right: 15px; */
     padding: 0;
 
 }
 
 .title-fullname {
-    font-size: 35px;
-    padding-top: 10px;
+    font-size: 30px;
+    /* padding-top: 10px; */
     color: white;
 }
 
 .title-job {
     color: white;
-    font-size: 22px;
+    font-size: 21px;
     
 }
 
@@ -136,53 +137,31 @@ a visited {
 
 #btn-print {
 	animation-name: anim-btn;
-	animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+	animation-timing-function: cubic-bezier(0.45, 2, 0.55, 3);
 	animation-iteration-count: infinite;
-	animation-duration: 2s;
-}
-#btn-logo {
-    opacity: 0;
-	animation-name: anim-fadex;
-	animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
-	animation-iteration-count: infinite;
-	animation-duration: 15s;
+	animation-duration: 4s;
 }
 
 @keyframes anim-btn {
 	0% {
-		transform: translateY(2%);
-        /* transform: translateX(1%); */
+		transform: translateY(3%);
 	}
 
 	50% {
-		transform: translateY(-2%);
+		transform: translateY(-3%);
 	}
 
 	100% {
-		transform: translateY(2%);
-		/* transform: translateX(1%); */
-	}
-}
-@keyframes anim-fade {
-	0% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
+		transform: translateY(3%);
 	}
 }
 
 .pdf-float{
 	position:fixed;
-	width:80px;
-	height:80px;
+	width:70px;
+	height:70px;
 	bottom:40px;
-	right:30px;
+	right:80px;
 	background-color: rgb(245 116 46);
 	color:#FFF;
 	border-radius:50px;
@@ -191,9 +170,9 @@ a visited {
 
 .pdf-float i{
     position: absolute;
-    top: 16px;
-    left: 22px;
-    font-size: 48px;
+    top: 15px;
+    left: 20px;
+    font-size: 40px;
 }
 .pdf-float img{
     border-radius:50px;
@@ -202,5 +181,18 @@ a visited {
 @media only screen and (max-width: 541px) {
     body {
         padding-bottom: 0px;
+    }
+
+    .pdf-float{
+        right:20px;
+        width:60px;
+        height:60px;
+        bottom:20px;
+    }
+
+    .pdf-float i{
+        font-size: 36px;
+        top: 12px;
+        left: 17px;
     }
 }
