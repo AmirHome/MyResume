@@ -134,7 +134,13 @@ a:hover {
 
 /* Float Buttom */
 
-#btn-print {
+.pdf-float{
+	animation-name: anim-btn;
+	animation-timing-function: cubic-bezier(0.55, 2, 0.65, 3);
+	animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+}
+.kata-float{
 	animation-name: anim-btn;
 	animation-timing-function: cubic-bezier(0.45, 2, 0.55, 3);
 	animation-iteration-count: infinite;
@@ -155,16 +161,25 @@ a:hover {
 	}
 }
 
+.btn-float{
+    position:fixed;
+    background-color: rgb(245 116 46);
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+}
+
 .pdf-float{
-	position:fixed;
-	width:70px;
-	height:70px;
-	bottom:40px;
-	right:80px;
-	background-color: rgb(245 116 46);
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 130px;
+}
+.kata-float{
+    width: 70px;
+    height: 70px;
+    bottom: 110px;
+    right: 100px;
 }
 
 .pdf-float i{
@@ -173,9 +188,16 @@ a:hover {
     left: 20px;
     font-size: 40px;
 }
-.pdf-float img{
+.kata-float i{
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    font-size: 40px;
+}
+.btn-float img{
     border-radius:50px;
 }
+
 
 @media only screen and (max-width: 541px) {
     body {
