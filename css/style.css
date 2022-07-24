@@ -1,19 +1,21 @@
-body{
-    
+body {
+
     background-color: #515b5f;
     background-color: #424242;
     padding-bottom: 15px;
     /* color: white; */
 }
-.container{
-    background-color:white;
-    background-color:#424242;
-    background-color:white;
+
+.container {
+    background-color: white;
+    background-color: #424242;
+    background-color: white;
     padding-bottom: 30px;
 
 }
-.footer{
-    background-color:#424242;
+
+.footer {
+    background-color: #424242;
 }
 
 a {
@@ -25,10 +27,11 @@ a:hover {
     color: wheat;
 }
 
-.bg-header{
-    background-color:rgb(81 81 81);
+.bg-header {
+    background-color: rgb(81 81 81);
 }
-.bg-contact{
+
+.bg-contact {
     background-color: rgb(42 42 42)
 }
 
@@ -50,10 +53,10 @@ a:hover {
 .title-job {
     color: white;
     font-size: 21px;
-    
+
 }
 
-.text-contact{
+.text-contact {
     color: white;
     padding: 10px 0px 10px 30px;
 }
@@ -67,35 +70,36 @@ a:hover {
     height: 7px;
 }
 
-.box{
+.box {
     background-color: rgb(245 116 46);
     height: 53px;
     max-width: 35px;
     /* margin-right: 5px; */
 }
-.title{
+
+.title {
     color: #f56d27;
 
     font-weight: bold;
     font-size: 18px;
 }
 
-.sub-title{
+.sub-title {
     color: grey;
     font-style: italic;
 }
 
-.sub2-title{
+.sub2-title {
     color: grey;
-    font-style:normal;
+    font-style: normal;
 }
 
-.bg-badge-dark{
+.bg-badge-dark {
     background-color: #FF8C51;
     font-size: 14px;
 }
-    
-.bg-badge{
+
+.bg-badge {
     background-color: #FFA77A;
     font-size: 12px;
 }
@@ -107,10 +111,10 @@ a:hover {
 
 
 .row-title {
-    padding-top:20px
+    padding-top: 20px
 }
 
-.heading3{
+.heading3 {
     color: grey;
     font-size: 14px;
 
@@ -122,7 +126,7 @@ a:hover {
     overflow: hidden;
     margin-left: auto;
     margin-right: 0;
-    
+
 }
 
 .cropped img {
@@ -134,86 +138,113 @@ a:hover {
 
 /* Float Buttom */
 
-.pdf-float{
-	animation-name: anim-btn;
-	animation-timing-function: cubic-bezier(0.55, 2, 0.65, 3);
-	animation-iteration-count: infinite;
-	animation-duration: 3.5s;
-}
-.kata-float{
-	animation-name: anim-btn;
-	animation-timing-function: cubic-bezier(0.45, 2, 0.55, 3);
-	animation-iteration-count: infinite;
-	animation-duration: 4s;
-}
-
 @keyframes anim-btn {
-	0% {
-		transform: translateY(3%);
-	}
+    0% {
+        transform: translateY(3%);
+    }
 
-	50% {
-		transform: translateY(-3%);
-	}
+    50% {
+        transform: translateY(-3%);
+    }
 
-	100% {
-		transform: translateY(3%);
-	}
+    100% {
+        transform: translateY(3%);
+    }
 }
 
-.btn-float{
-    position:fixed;
+.pdf-float {
+    animation-name: anim-btn;
+    animation-timing-function: cubic-bezier(0.55, 2, 0.65, 3);
+    animation-iteration-count: infinite;
+    animation-duration: 3.5s;
+    bottom: 115px;/* min is 20 + fix 20 + height is 70 + 5 */
+    right: 50px;/* min is 30 + fix 20*/
+}
+
+.kata-float {
+    animation-name: anim-btn;
+    animation-timing-function: cubic-bezier(0.45, 2, 0.55, 3);
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    bottom: 40px;/* min is 20 + fix 20*/
+    right: 85px;/* min is 30 + half of with is 35 + fix 20 */
+}
+
+.btn-float {
+    position: fixed;
     background-color: rgb(245 116 46);
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-}
-
-.pdf-float{
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
     width: 70px;
     height: 70px;
-    bottom: 40px;
-    right: 130px;
-}
-.kata-float{
-    width: 70px;
-    height: 70px;
-    bottom: 110px;
-    right: 100px;
 }
 
-.pdf-float i{
+.pdf-float i {
     position: absolute;
     top: 15px;
     left: 20px;
     font-size: 40px;
 }
-.kata-float i{
+
+.kata-float i {
     position: absolute;
     top: 15px;
     left: 13px;
     font-size: 40px;
 }
-.btn-float img{
-    border-radius:50px;
+
+.btn-float img {
+    border-radius: 50px;
 }
 
 
-@media only screen and (max-width: 541px) {
+@media only screen and (max-width: 576px) {
     body {
         padding-bottom: 0px;
     }
 
-    .pdf-float{
-        right:20px;
-        width:60px;
-        height:60px;
-        bottom:20px;
+    .pdf-float {
+        width: 60px;
+        height: 60px;
+        right: 30px;
+        bottom: 85px;/* min is 0 + fix 20 + height is 60 + 5 */
+    }
+    .kata-float {
+        width: 60px;
+        height: 60px;
+        right: 30px;
+        bottom: 20px;
     }
 
-    .pdf-float i{
+    .pdf-float i {
         font-size: 36px;
         top: 12px;
         left: 17px;
+    }
+    .kata-float i {
+        font-size: 36px;
+        top: 12px;
+        /*left: 17px;*/
+    }
+}
+
+/*@media (min-width: 576px) { ... }
+
+@media (min-width: 768px) { ... }
+
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1200px) { ... }*/
+
+@media only screen and (min-width: 1200px) {
+    .pdf-float {
+        bottom: 115px;/* min is 20 + fix 20 + height is 70 + 5 */
+        right: 100px;/* min is 80 + fix 20*/
+    }
+
+    .kata-float {
+        bottom: 40px;/* min is 20 + fix 20*/
+        right: 135px;/* min is 80 + half of with is 35 + fix 20 */
     }
 }
