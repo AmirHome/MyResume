@@ -36,7 +36,7 @@ a:hover {
 }
 
 .bg-img {
-    background-color: rgb(245 116 46);
+    background-color: rgb(252,108,4);
     height: 110px;
     /* width: 134px; */
     /* margin-right: 15px; */
@@ -66,19 +66,19 @@ a:hover {
 }
 
 .line {
-    background-color: #f56d27;
+    background-color: #fc5c04;
     height: 7px;
 }
 
 .box {
-    background-color: rgb(245 116 46);
+    background-color: rgb(252,108,4);
     height: 53px;
     max-width: 35px;
     /* margin-right: 5px; */
 }
 
 .title {
-    color: #f56d27;
+    color: #fc5c04;
 
     font-weight: bold;
     font-size: 18px;
@@ -126,7 +126,6 @@ a:hover {
     overflow: hidden;
     margin-left: auto;
     margin-right: 0;
-
 }
 
 .cropped img {
@@ -172,7 +171,7 @@ a:hover {
 
 .btn-float {
     position: fixed;
-    background-color: rgb(245 116 46);
+    background-color: rgb(252,108,4);
     color: #FFF;
     border-radius: 50px;
     text-align: center;
@@ -228,14 +227,6 @@ a:hover {
         /*left: 17px;*/
     }
 }
-
-/*@media (min-width: 576px) { ... }
-
-@media (min-width: 768px) { ... }
-
-@media (min-width: 992px) { ... }
-
-@media (min-width: 1200px) { ... }*/
 
 @media only screen and (min-width: 1200px) {
     .pdf-float {
