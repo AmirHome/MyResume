@@ -23,19 +23,7 @@
 <div class="container">
 
     <!-- Header -->
-    <div class="row text-light bg-dark py-3 px-5 py-sm-1 px-sm-4">
-        <div class="col-md-3"><i class="far fa-envelope"></i> <a
-                href="mailto:amir.email@gmail.com">amir.email@gmail.com</a></div>
-        <div class="col-md-2"><i class="fas fa-mobile-alt"></i> <a href="tel:9053365725505">+90 533 657 2550</a></div>
-        <div class="col-md-2"><i class="fab fa-skype"></i> <a target="_blank"
-                                                              href="skype:amir.email?caht">amir.email</a></div>
-        <div class="col-md-3"><i class="fab fa-internet-explorer"></i> <a target="_blank"
-                                                                          href="http://www.amirhome.com/">amirhome.com</a>
-        </div>
-        <div class="col-md-2"><a target="_blank"
-                                 href="https://www.linkedin.com/in/amir-hosseinzadeh/"><b>Linked </b><i
-                class="fab fa-linkedin-in"></i> </a></div>
-    </div>
+    <div id="includedHeader"></div>
     <div class="row line">
 
     </div>
@@ -334,10 +322,8 @@
 
 <script>
 
-
     $(document).ready(function () {
-
-
+        $("#includedHeader").load("header.html");
     });
 
 </script>
