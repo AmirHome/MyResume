@@ -1,24 +1,21 @@
 /*
 * Widget stateless statefull
 * */
-/*
-main() {
-  runApp(
-    MaterialApp(
-      home: PageDetail(),
-    )
-  );
-}
-* */
+
 import 'package:flutter/material.dart';
 
-class PageDetail extends StatefulWidget {
+main() {
+  runApp(MaterialApp(
+    home: PageDetail(),
+  ));
+}
 
+class PageDetail extends StatefulWidget {
   @override
   _PageDetailState createState() => _PageDetailState();
 }
 
-class _PageDetailState extends State<PageDetail> {
+class _PageDetailState extends State&lt;PageDetail&gt; {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,10 +39,13 @@ class _PageDetailState extends State<PageDetail> {
     );
   }
 
-  Widget _sectionContainer({String text, Color color}) {
+  Widget _sectionContainer({required String text, required Color color}) {
     return Container(
-      child: Text(text, style: TextStyle(fontSize: 40),),
-      decoration: BoxDecoration( color: color),
+      child: Text(
+        text,
+        style: TextStyle(fontSize: 40),
+      ),
+      decoration: BoxDecoration(color: color),
     );
   }
 }
