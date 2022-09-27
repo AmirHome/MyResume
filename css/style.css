@@ -68,6 +68,10 @@ a:hover {
     /* margin-right: 5px; */
 }
 
+.list{
+    line-height: 2rem;
+}
+
 .title {
     color: #fc5c04;
 

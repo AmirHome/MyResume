@@ -1,4 +1,9 @@
-"/* Time 10 */
+main() {
+    var myVariable = MyVariable();
+    myVariable.showDebug();
+}
+
+/* Time 10 */
  class MyVariable {
    /* Type */
    bool myBool = true;
@@ -6,9 +11,9 @@
    double myDouble = -9999.88;
    String myString = 'String';
    List myArray = [1, 2, 2, 2, 3, 4];
-   List<String> myArrayStr = ['1,2,2,3', '4'];
-   Set mySet = <String>{'A', 'B', 'C'}; // unique
-   Map<String, dynamic> myMap = {
+   List&lt;String&gt; myArrayStr = ['1,2,2,3', '4'];
+   Set mySet = &lt;String&gt; {'A', 'B', 'C'}; // unique
+   Map&lt;String, dynamic&gt; myMap = {
      'A': 1,
      'B': 'two',
      'C': 3,
@@ -45,4 +50,4 @@
      print(myFinal);
      print(myConst);
    }
- }"
+ }
