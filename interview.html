@@ -36,7 +36,7 @@
 
     </div>
 
-
+    <!-- Principles  -->
     <div class="row row-title">
         <div class="col-1 box"></div>
         <div class="col-11">
@@ -52,36 +52,6 @@
                     <span class="badge bg-badge-dark">YAGNI</span>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- SOLID Principles -->
-    <div class="row row-title">
-        <div class="col-1 box"></div>
-        <div class="col-11">
-
-            <div class="row">
-                <div class="col-md-12 title">SOLID</div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12"><b>Single Responsibility</b>
-                    <span class="sub-title"> every module or class should have only a single responsibility.</span>
-                </div>
-                <div class="col-md-12"><b>Open/Closed</b>
-                    <span class="sub-title"> software entities should be open for extension but closed for modification.</span>
-                </div>
-                <div class="col-md-12"><b>Liskov Substitution</b>
-                    <span class="sub-title"> objects in a program should be - replaceable with instances of their subtypes without altering the correctness of that program.</span>
-                </div>
-                <div class="col-md-12"><b>Interface Segregation</b>
-                    <span class="sub-title"> small client-specific interfaces are better than one general-purpose interface.</span>
-                </div>
-                <div class="col-md-12"><b>Dependency Inversion</b>
-                    <span class="sub-title"> Dependency Inversion - use interfaces instead of concrete implementations.</span>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -107,6 +77,51 @@
             <div class="row">
                 <div class="col-md-12"><b>YAGNI</b>
                     <span class="sub-title">  You Aren't Gonna Need It (avoid creating extra complexity through adding functionality that you assume you may need in the future)</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- SOLID Principles -->
+    <div class="row row-title">
+        <div class="col-1 box"></div>
+        <div class="col-11">
+
+            <div class="row">
+                <div class="col-md-12 title">SOLID</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12"><b>Single Responsibility</b>
+                    <span class="sub-title">Every module or class should have only a single responsibility.</span>
+                    <p>Class should have only one responsibility which means class should be highly cohesive and
+                        implement strongly related logic. Class implementing feature 1 AND feature 2 AND feature 3 (and
+                        so on) violates SRP.</p>
+
+                </div>
+                <div class="col-md-12"><b>Open/Closed</b>
+                    <span class="sub-title">Software entities should be open for extension but closed for modification.</span>
+                    <p>Class should be open for extension and closed for modification. You should be able to extend
+                        class’ behavior without the need to modify its implementation (how? Don’t modify existing code
+                        of class X but write a new piece of code that will be used by class X).</p>
+                </div>
+                <div class="col-md-12"><b>Liskov Substitution</b>
+                    <span class="sub-title"> objects in a program should be - replaceable with instances of their subtypes without altering the correctness of that program.</span>
+                    <p>Extension of open/closed principle stating that new derived classes extending the base class
+                        should not change the behavior of the base class (behavior of inherited methods). Provided that
+                        if a class Y is a subclass of class X any instance referencing class X should be able to reference
+                        class Y as well (derived types must be completely substitutable for their base types.).</p>
+                </div>
+                <div class="col-md-12"><b>Interface Segregation</b>
+                    <span class="sub-title">Small client-specific interfaces are better than one general-purpose interface.</span>
+                    <p>Client should not depend on interface/methods which it is not using.</p>
+                </div>
+                <div class="col-md-12"><b>Dependency Inversion</b>
+                    <span class="sub-title">Dependency Inversion - use interfaces instead of concrete implementations.</span>
+                    <p>High-level modules (e.g. business logic) should not depend on low-level modules (e.g. database
+                        operations or I/O). Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.</p>
                 </div>
             </div>
 
