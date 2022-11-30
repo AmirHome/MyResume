@@ -15,10 +15,8 @@ class MyVariable {
   List&lt;String&gt; myArrayStr = ['1,2,2,3','4'];
   Set mySet = &lt;String&gt; {'A', 'B', 'C'}; // unique
   Map&lt;String, dynamic &gt; myMap = {'A':1, 'B':'two', 'C':3, 'D':{'D1':1, 'D2': 2}};// json
-  var entriesIterator = myMap.entries;
-  String myMapElementKey = entriesIterator.elementAt(2).key;
-  String myMapElementValue = entriesIterator.elementAt(2).value;
 
+  var entriesIterator;
 
   var myVar = 'var';
   dynamic myDynamic = 'Dynamic';
@@ -34,9 +32,14 @@ class MyVariable {
     /* Dont Change Type */
     myVar = 'var changed';
     myDynamic = 'Dynamic changed' + ' ' + myString;
+
+    entriesIterator = myMap.entries;
+    myString = entriesIterator.elementAt(2).key;
+
   }
 
   void showDebug(){
+
     /* Debug */
     print(myBool);
     print(myInt);
