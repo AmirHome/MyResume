@@ -1,6 +1,7 @@
 main() {
-    var myVariable = MyVariable();
-    myVariable.showDebug();
+  var myVariable = MyVariable();
+  myVariable.myChanges();
+  myVariable.showDebug();
 }
 
 /* Time 10 */
@@ -16,16 +17,15 @@ class MyVariable {
   Set mySet = &lt;String&gt; {'A', 'B', 'C'}; // unique
   Map&lt;String, dynamic &gt; myMap = {'A':1, 'B':'two', 'C':3, 'D':{'D1':1, 'D2': 2}};// json
 
-  var entriesIterator;
-
   var myVar = 'var';
   dynamic myDynamic = 'Dynamic';
+  dynamic entriesIterator;
 
   final String myFinal = 'Final';
   static const double myConst = 3.14;
 
 
-  void myChanges(){
+ void myChanges(){
     /* Wrong */
     //myFinal = 'Final Change';
     //myConst = 'const Change';
@@ -34,7 +34,7 @@ class MyVariable {
     myDynamic = 'Dynamic changed' + ' ' + myString;
 
     entriesIterator = myMap.entries;
-    myString = entriesIterator.elementAt(2).key;
+    entriesIterator = entriesIterator.elementAt(2).key;
 
   }
 
@@ -49,13 +49,9 @@ class MyVariable {
     print(myArrayStr);
     print(mySet);
     print(myMap);
-    print(myMapElementKey);
-    print(myMapElementValue);
     print(myVar);
     print(myDynamic);
+    print(entriesIterator);
     print(myFinal);
     print(myConst);
   }
-
-
-}
