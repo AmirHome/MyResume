@@ -47,9 +47,9 @@
 
 <pre>
     <code id="codeShow" class="language-bash codeText">
-    git log
-    git reflog
-    git diff --staged
+    git log -p --stat file       // Show histories of file
+    git reflog                   
+    git diff --staged            // Show staged changes
     git cherry-pick
 
     git add .
@@ -58,8 +58,8 @@
     git push
     git pull
 
-    git checkout HEAD -- my-file.txt
-    git reset --hard
+    git checkout -- file.txt     // Revert changes to file
+    git reset --hard             // Revert all changes
     git clean -df
 
     git branch -l
