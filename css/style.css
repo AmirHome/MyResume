@@ -79,6 +79,12 @@ a:hover {
     font-size: 18px;
 }
 
+.title2 {
+    /* color: grey; */
+    font-style: italic;
+    font-weight: 500;
+}
+
 .sub-title {
     color: grey;
     font-style: italic;
@@ -91,7 +97,7 @@ a:hover {
 
 .bg-badge-dark {
     background-color: #FF8C51;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .bg-badge {
@@ -100,10 +106,9 @@ a:hover {
 }
 
 .badge {
-    color: rgb(7 7 7);
+    color: #222;
     margin: 2px;
 }
-
 
 .row-title {
     padding-top: 20px
@@ -111,7 +116,7 @@ a:hover {
 
 .heading3 {
     color: grey;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
